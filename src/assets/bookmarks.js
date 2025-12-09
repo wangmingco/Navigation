@@ -11,21 +11,15 @@ export const categorizedBookmarks = [
       { title: 'Favicon Generator', url: 'https://favicon.io/favicon-generator/' },
       { title: 'Code2Png', url: 'https://carbon.now.sh/' },
       { title: 'ASCIIFlow Infinity', url: 'http://asciiflow.com/' },
-      { title: '汇率API', url: 'https://fixer.io/signup/free' },
-      { title: '布局拼图 & 长图拼接', url: 'https://img.ops-coffee.cn/photo/#google_vignette' }
-    ]
-  },
-  {
-    category: '📚 学习与文档',
-    items: [
+      { title: '布局拼图 & 长图拼接', url: 'https://img.ops-coffee.cn/photo/#google_vignette' },
       { title: 'VisuAlgo - 链表等', url: 'https://visualgo.net/zh/list' },
       { title: 'Algorithm Visualizer', url: 'https://algorithm-visualizer.org/' },
       { title: 'Symbolab 数学求解器', url: 'https://zs.symbolab.com/' },
       { title: 'Online Python Tutor', url: 'https://cscircles.cemc.uwaterloo.ca/visualize#mode=display' },
       { title: 'Visualize code execution', url: 'http://programtracing.altervista.org/visualize.html#mode=edit' },
-      { title: '元素周期表', url: 'https://ptable.com/?lang=zh-hans' },
-      { title: '三维分子', url: 'https://mole.chemview.net/' },
-      { title: 'Old maps of China', url: 'https://www.oldmapsonline.org/en/China' }
+      { title: 'stable diffusion', url: 'https://zhuanlan.zhihu.com/p/578233719' },
+      { title: 'Supervision', url: 'https://supervision.roboflow.com/latest/#install' },
+      { title: 'Vue Bits - Target Cursor', url: 'https://vue-bits.dev/animations/target-cursor' }
     ]
   },
   {
@@ -48,21 +42,16 @@ export const categorizedBookmarks = [
       { title: '大盘云图', url: 'https://dapanyuntu.com/' },
       { title: 'PonentStock', url: 'https://ponentstock.com/breadth#!' },
       { title: '亿牛', url: 'https://eniu.com/' },
-      { title: '上海黄金交易所', url: 'https://www.sge.com.cn/sjzx/quotation_daily_new' }
-    ]
-  },
-  {
-    category: '🏥 医疗健康',
-    items: [
-      { title: '就医用药服务指引', url: 'https://ybfw.ybj.beijing.gov.cn/#/search/ServiceGuidelines' },
-      { title: '国家医保药品目录查询', url: 'https://wx.nhsa.gov.cn/#/pages/NRDL/index/index' },
-      { title: '进口原研药目录', url: 'https://m.vc89.cn/' } // 注意：这个是你自己的，可保留或移除
+      { title: '贷款计算器', url: 'https://www.cmbchina.com/CmbWebPubInfo/Cal_Loan_Per.aspx?chnl=dkjsq' },
+      { title: '马桶', url: 'http://matols.com/' },
+      { title: '上海黄金交易所', url: 'https://www.sge.com.cn/sjzx/quotation_daily_new' },
+      { title: '汇率API', url: 'https://fixer.io/signup/free' },
+      { title: '郑州商品交易所', url: 'https://www.1qh.cn/exchange/CZCE.html' }
     ]
   },
   {
     category: '👨‍👩‍👧 亲子教育',
     items: [
-      { title: '溜娃指南针', url: 'https://vc89.cn/' }, // 你自己的，也可放这里
       { title: '我爱ABC-早教资源分享', url: 'https://www.oiabc.com/' },
       { title: 'Kids Worksheets', url: 'https://www.kiddoworksheets.com/' },
       { title: 'ColoringBook AI', url: 'https://www.coloringbook.ai/zh/dashboard/convert-photo-to-coloring-page' },
@@ -74,14 +63,14 @@ export const categorizedBookmarks = [
     items: [
       { title: '进京证摄像头位置分布地图', url: 'https://jinjing365.com/' },
       { title: '自驾花费', url: 'http://kylebing.cn/tools/car-oil/' },
-      { title: '贷款计算器', url: 'https://www.cmbchina.com/CmbWebPubInfo/Cal_Loan_Per.aspx?chnl=dkjsq' },
-      { title: '马桶', url: 'http://matols.com/' },
       { title: 'Online Room Planner', url: 'https://www.planyourroom.com/' },
       { title: 'Ventusky', url: 'https://www.ventusky.com/' },
       { title: 'Windy', url: 'https://www.windy.com/' },
       { title: '天文通', url: 'https://www.darkmap.cn/' },
       { title: '光污染地图', url: 'https://www.lightpollutionmap.info/' },
-      { title: '保定市人民政府政务公开', url: 'http://www.baoding.gov.cn/zwgknr-888888035-159041.html' }
+      { title: 'PIYO PEN智能点读笔', url: 'http://piyopen.lovereadingbooks.com/content/292' },
+      { title: '就医用药服务指引', url: 'https://ybfw.ybj.beijing.gov.cn/#/search/ServiceGuidelines' },
+      { title: '国家医保药品目录查询', url: 'https://wx.nhsa.gov.cn/#/pages/NRDL/index/index' },
     ]
   },
   {
@@ -92,8 +81,7 @@ export const categorizedBookmarks = [
       { title: '高德控制台', url: 'https://console.amap.com/dev/key/app' },
       { title: '百度地图开放平台', url: 'https://lbsyun.baidu.com/apiconsole/key' },
       { title: '聚合数据-个人中心', url: 'https://dashboard.juhe.cn/data/index/my' },
-      { title: '沧海数据', url: 'https://tsanghi.com/fin/user' },
-      { title: '郑州商品交易所', url: 'https://www.1qh.cn/exchange/CZCE.html' }
+      { title: '沧海数据', url: 'https://tsanghi.com/fin/user' }
     ]
   },
   {
@@ -112,24 +100,15 @@ export const categorizedBookmarks = [
     ]
   },
   {
-    category: '🎨 设计创意',
-    items: [
-      { title: 'PIYO PEN智能点读笔', url: 'http://piyopen.lovereadingbooks.com/content/292' },
-      { title: '红砖美术馆', url: 'https://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png' }, // 注：原书签无真实URL，已过滤
-      { title: 'AsPoem', url: 'https://aspoem.com/zh-Hans' },
-      { title: 'Seat Maps', url: 'https://seatmaps.com/zh-CN/airlines/kn-china-united-airlines/boeing-737-800/' },
-      { title: 'Vue Bits - Target Cursor', url: 'https://vue-bits.dev/animations/target-cursor' }
-    ]
-  },
-  {
     category: '🌐 其他',
     items: [
-      { title: 'stable diffusion', url: 'https://zhuanlan.zhihu.com/p/578233719' },
-      { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
-      { title: '通义', url: 'https://www.tongyi.com/' },
-      { title: 'Supervision', url: 'https://supervision.roboflow.com/latest/#install' },
       { title: 'TOTP', url: 'https://totp.app/' },
-      { title: '文档', url: 'https://docs.qq.com/desktop/stared?u=978e1dcfddca4a88ad6d85ec8d219612' }
+      { title: '文档', url: 'https://docs.qq.com/desktop/stared?u=978e1dcfddca4a88ad6d85ec8d219612' },
+      { title: '元素周期表', url: 'https://ptable.com/?lang=zh-hans' },
+      { title: '三维分子', url: 'https://mole.chemview.net/' },
+      { title: 'Old maps of China', url: 'https://www.oldmapsonline.org/en/China' },
+      { title: 'AsPoem', url: 'https://aspoem.com/zh-Hans' },
+      { title: 'Seat Maps', url: 'https://seatmaps.com/zh-CN/airlines/kn-china-united-airlines/boeing-737-800/' },
     ]
   }
 ];
