@@ -7,18 +7,17 @@
     </div>
 
     <div class="container">
-      <!-- 我的站点（大卡片，完全不变） -->
+      <!-- 我的站点（大卡片，强制一行显示，可横向滚动） -->
       <h2 class="section-title">我的站点</h2>
-      <el-row :gutter="30">
-        <el-col
-          v-for="(site, index) in mySites"
-          :key="'my-' + index"
-          :xs="24"
-          :sm="12"
-          :md="8"
-          :lg="6"
-        >
-          <el-card class="site-card large" shadow="hover" @click.native="goTo(site.url)">
+      <div class="my-sites-container">
+        <div class="my-sites-row">
+          <el-card
+            v-for="(site, index) in mySites"
+            :key="'my-' + index"
+            class="site-card large"
+            shadow="hover"
+            @click.native="goTo(site.url)"
+          >
             <div class="card-content">
               <div class="icon-wrapper">
                 <i :class="site.icon" class="site-icon"></i>
@@ -28,8 +27,8 @@
               <el-button type="primary" size="small" class="goto-btn">进入站点</el-button>
             </div>
           </el-card>
-        </el-col>
-      </el-row>
+        </div>
+      </div>
 
       <!-- 分类书签（超小卡片） -->
       <div v-for="(group, idx) in categorizedBookmarks" :key="idx" class="bookmark-group">
@@ -61,7 +60,6 @@ export default {
   data() {
     return {
       mySites: [
-        
         {
           title: '溜娃指南针',
           desc: '亲子出行、博物馆、乐园推荐',
@@ -73,12 +71,6 @@ export default {
           desc: '我的技术博客',
           url: 'https://blog.vc89.cn/',
           icon: 'el-icon-star-off'
-        },
-        {
-          title: '溜娃指南针',
-          desc: '亲子出行、博物馆、乐园推荐',
-          url: 'https://vc89.cn/',
-          icon: 'el-icon-location-outline'
         },
         {
           title: '金融站点',
@@ -139,8 +131,23 @@ export default {
   margin: 0 auto;
 }
 
-/* —————— 我的站点：大卡片（完全保留原样式） —————— */
-.site-card.large {
+/* —————— 我的站点：强制一行显示，横向滚动 —————— */
+.my-sites-container {
+  overflow-x: auto;
+  padding: 10px 0 20px;
+  margin-bottom: 30px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.my-sites-row {
+  display: flex;
+  gap: 30px;
+  padding: 0 15px;
+  min-width: max-content;
+}
+
+.my-sites-row .site-card.large {
+  flex: 0 0 auto;
   height: 280px;
   cursor: pointer;
   border-radius: 12px;
@@ -148,12 +155,12 @@ export default {
   overflow: hidden;
 }
 
-.site-card.large:hover {
+.my-sites-row .site-card.large:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
-.site-card.large .card-content {
+.my-sites-row .site-card.large .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,6 +170,7 @@ export default {
   padding: 20px;
 }
 
+/* —————— 大卡片内部样式（复用原样式） —————— */
 .icon-wrapper {
   width: 72px;
   height: 72px;
@@ -179,13 +187,13 @@ export default {
   color: #1e90ff;
 }
 
-.site-card.large h2 {
+.my-sites-row .site-card.large h2 {
   font-size: 20px;
   color: #333;
   margin: 10px 0;
 }
 
-.site-card.large p {
+.my-sites-row .site-card.large p {
   color: #666;
   font-size: 14px;
   margin-bottom: 16px;
