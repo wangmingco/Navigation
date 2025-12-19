@@ -61,11 +61,24 @@ export default {
   data() {
     return {
       mySites: [
+        
         {
-          title: '愿望清单',
-          desc: '管理你的愿望与心愿单',
-          url: 'https://w.vc89.cn/',
+          title: '溜娃指南针',
+          desc: '亲子出行、博物馆、乐园推荐',
+          url: 'https://vc89.cn/',
+          icon: 'el-icon-location-outline'
+        },
+        {
+          title: '技术博客',
+          desc: '我的技术博客',
+          url: 'https://blog.vc89.cn/',
           icon: 'el-icon-star-off'
+        },
+        {
+          title: '溜娃指南针',
+          desc: '亲子出行、博物馆、乐园推荐',
+          url: 'https://vc89.cn/',
+          icon: 'el-icon-location-outline'
         },
         {
           title: '金融站点',
@@ -80,10 +93,10 @@ export default {
           icon: 'el-icon-medical'
         },
         {
-          title: '溜娃指南针',
-          desc: '亲子出行、博物馆、乐园推荐',
-          url: 'https://vc89.cn/',
-          icon: 'el-icon-location-outline'
+          title: '愿望清单',
+          desc: '管理你的愿望与心愿单',
+          url: 'https://w.vc89.cn/',
+          icon: 'el-icon-star-off'
         }
       ],
       categorizedBookmarks
