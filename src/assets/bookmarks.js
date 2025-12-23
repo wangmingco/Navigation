@@ -17,7 +17,6 @@ export const categorizedBookmarks = [
       { title: 'Symbolab 数学求解器', url: 'https://zs.symbolab.com/' },
       { title: 'Online Python Tutor', url: 'https://cscircles.cemc.uwaterloo.ca/visualize#mode=display' },
       { title: 'Visualize code execution', url: 'http://programtracing.altervista.org/visualize.html#mode=edit' },
-      { title: 'stable diffusion', url: 'https://zhuanlan.zhihu.com/p/578233719' },
       { title: 'Supervision', url: 'https://supervision.roboflow.com/latest/#install' },
       { title: 'Vue Bits - Target Cursor', url: 'https://vue-bits.dev/animations/target-cursor' }
     ]
@@ -33,20 +32,15 @@ export const categorizedBookmarks = [
       { title: 'Trading Economics', url: 'https://zh.tradingeconomics.com/china/stock-market' },
       { title: '巨潮资讯', url: 'http://www.cninfo.com.cn/new/index' },
       { title: '集思录', url: 'https://www.jisilu.cn/data/indicator/' },
-      { title: '同花顺实时新闻', url: 'https://news.10jqka.com.cn/realtimenews.html' },
-      { title: '新浪财经', url: 'https://finance.sina.com.cn/7x24/' },
       { title: '理杏仁', url: 'https://www.lixinger.com/' },
       { title: '题材轮动', url: 'https://www.fupanhezi.com/h5/' },
-      { title: '选股宝', url: 'https://xuangubao.cn/dingpan' },
       { title: '富途选股器', url: 'https://www.futunn.com/screener/cn/indicators' },
       { title: '大盘云图', url: 'https://dapanyuntu.com/' },
-      { title: 'PonentStock', url: 'https://ponentstock.com/breadth#!' },
       { title: '亿牛', url: 'https://eniu.com/' },
       { title: '贷款计算器', url: 'https://www.cmbchina.com/CmbWebPubInfo/Cal_Loan_Per.aspx?chnl=dkjsq' },
       { title: '马桶', url: 'http://matols.com/' },
       { title: '上海黄金交易所', url: 'https://www.sge.com.cn/sjzx/quotation_daily_new' },
       { title: '汇率API', url: 'https://fixer.io/signup/free' },
-      { title: '郑州商品交易所', url: 'https://www.1qh.cn/exchange/CZCE.html' }
     ]
   },
   {
@@ -68,20 +62,8 @@ export const categorizedBookmarks = [
       { title: 'Windy', url: 'https://www.windy.com/' },
       { title: '天文通', url: 'https://www.darkmap.cn/' },
       { title: '光污染地图', url: 'https://www.lightpollutionmap.info/' },
-      { title: 'PIYO PEN智能点读笔', url: 'http://piyopen.lovereadingbooks.com/content/292' },
       { title: '就医用药服务指引', url: 'https://ybfw.ybj.beijing.gov.cn/#/search/ServiceGuidelines' },
       { title: '国家医保药品目录查询', url: 'https://wx.nhsa.gov.cn/#/pages/NRDL/index/index' },
-    ]
-  },
-  {
-    category: '☁️ 云与运维',
-    items: [
-      { title: 'Cloudflare', url: 'https://dash.cloudflare.com/bcb297374315b67af14f59a12d10382d' },
-      { title: '域名控制台', url: 'https://dc.console.aliyun.com/next/index#/domain-list/all' },
-      { title: '高德控制台', url: 'https://console.amap.com/dev/key/app' },
-      { title: '百度地图开放平台', url: 'https://lbsyun.baidu.com/apiconsole/key' },
-      { title: '聚合数据-个人中心', url: 'https://dashboard.juhe.cn/data/index/my' },
-      { title: '沧海数据', url: 'https://tsanghi.com/fin/user' }
     ]
   },
   {

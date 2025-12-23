@@ -1,5 +1,10 @@
 <template>
   <div class="vc89-home">
+    <!-- 右上角联系按钮 -->
+    <div class="contact-btn" @click="contactMe">
+      <i class="el-icon-message"></i> 联系我
+    </div>
+
     <!-- 顶部标题 -->
     <div class="header">
       <h1>VC89 导航中心</h1>
@@ -62,7 +67,7 @@ export default {
       mySites: [
         {
           title: '溜娃指南针',
-          desc: '亲子出行、博物馆、乐园推荐',
+          desc: '亲子乐园、博物馆推荐',
           url: 'https://vc89.cn/',
           icon: 'el-icon-location-outline'
         },
@@ -70,7 +75,7 @@ export default {
           title: '技术博客',
           desc: '我的技术博客',
           url: 'https://blog.vc89.cn/',
-          icon: 'el-icon-star-off'
+          icon: 'el-icon-document-copy'
         },
         {
           title: '金融站点',
@@ -82,7 +87,7 @@ export default {
           title: '进口原研药目录',
           desc: '权威原研药品信息查询',
           url: 'https://m.vc89.cn/',
-          icon: 'el-icon-medical'
+          icon: 'el-icon-coffee'
         },
         {
           title: '愿望清单',
@@ -97,6 +102,9 @@ export default {
   methods: {
     goTo(url) {
       window.open(url, '_blank');
+    },
+    contactMe() {
+      window.location.href = 'mailto:admin@vc89.cn';
     }
   }
 }
@@ -108,6 +116,30 @@ export default {
   background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
   padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+}
+
+/* —————— 右上角联系按钮 —————— */
+.contact-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.4);
+  z-index: 10;
+  transition: background-color 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #0d7ae0;
 }
 
 .header {
@@ -131,23 +163,29 @@ export default {
   margin: 0 auto;
 }
 
-/* —————— 我的站点：强制一行显示，横向滚动 —————— */
+/* —————— 我的站点：强制一行显示，横向滚动，卡片等宽 —————— */
 .my-sites-container {
   overflow-x: auto;
-  padding: 10px 0 20px;
+  padding: 10px 0 10px;
   margin-bottom: 30px;
   -webkit-overflow-scrolling: touch;
+  /* 隐藏滚动条 */
+  scrollbar-width: none; /* Firefox */
+}
+
+.my-sites-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .my-sites-row {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   padding: 0 15px;
   min-width: max-content;
 }
 
 .my-sites-row .site-card.large {
-  flex: 0 0 auto;
+  flex: 0 0 220px; /* 固定宽度，保证所有卡片等宽 */
   height: 280px;
   cursor: pointer;
   border-radius: 12px;
@@ -170,7 +208,7 @@ export default {
   padding: 20px;
 }
 
-/* —————— 大卡片内部样式（复用原样式） —————— */
+/* —————— 大卡片内部样式 —————— */
 .icon-wrapper {
   width: 72px;
   height: 72px;
@@ -205,7 +243,7 @@ export default {
   border-color: #1e90ff;
 }
 
-/* —————— 三方站点：超小标签（宽高 ≈ 原小卡片的 1/3） —————— */
+/* —————— 三方站点：超小标签 —————— */
 .bookmark-group {
   margin: 50px 0 40px;
 }
@@ -233,7 +271,7 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc((100% - 40px) / 3); /* 约 1/3 宽度（考虑 gap） */
+  max-width: calc((100% - 40px) / 3);
 }
 
 .bookmark-tag:hover {
@@ -275,6 +313,13 @@ export default {
 @media (max-width: 768px) {
   .bookmark-tag {
     max-width: calc((100% - 10px) / 2);
+  }
+
+  .contact-btn {
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    font-size: 13px;
   }
 }
 </style>
